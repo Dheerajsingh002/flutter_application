@@ -1,17 +1,17 @@
-import 'package:first_app/screen2.dart';
+import 'package:first_app/screen1.dart';
 import 'package:first_app/screen6.dart';
 import 'package:flutter/material.dart';
 
-import 'Screen2.dart';
+import 'screen1.dart';
 
-class GetStarted extends StatefulWidget {
-  const GetStarted({Key? key}) : super(key: key);
+class screen1 extends StatefulWidget {
+  const screen1({Key? key}) : super(key: key);
 
   @override
-  State<GetStarted> createState() => _GetStartedState();
+  State<screen1> createState() => _screen1State();
 }
 
-class _GetStartedState extends State<GetStarted> {
+class _screen1State extends State<screen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,14 +27,13 @@ class _GetStartedState extends State<GetStarted> {
                 style: TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
-                    color: Colors.orange)),
+                    color: Colors.purple)),
             const Image(
-                image: NetworkImage(
-                    'https://cdn.discordapp.com/attachments/836229655606067220/992718879631622184/unknown.png')),
+                image: AssetImage("images/training.jpg")),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 textStyle: const TextStyle(fontSize: 20),
-                primary: const Color.fromARGB(255, 13, 125, 22),
+                primary: Color.fromARGB(255, 4, 4, 69),
                 fixedSize: const Size(300, 20),
               ),
               onPressed: () {

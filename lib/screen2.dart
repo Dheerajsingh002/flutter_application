@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class Screen2 extends StatelessWidget {
-  Screen2( {Key? key}) : super(key: key);
+class screen2 extends StatelessWidget {
+  screen2( {Key? key}) : super(key: key);
   TextEditingController _name=TextEditingController();
 
   @override
@@ -19,7 +19,7 @@ class Screen2 extends StatelessWidget {
               children: [
                 Row(
                   children:[
-                    Text("Login",style:TextStyle(fontSize:30,color:Colors.black,)
+                    Text("Login",style:TextStyle(fontSize:30,color:Colors.blue,)
                 ),
                   ],
                 ),
@@ -61,7 +61,7 @@ class Screen2 extends StatelessWidget {
                 height:20,
               ),
               ElevatedButton(onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Screen3(_name.text)));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>screen3(_name.text)));
               }, 
               child:Text("Login",style:TextStyle(color:Colors.white,fontSize:20)),
               ),

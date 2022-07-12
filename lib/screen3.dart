@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Screen3 extends StatefulWidget {
-  const Screen3(String text, {Key? key}) : super(key: key);
+class screen3 extends StatefulWidget {
+  const screen3(String text, {Key? key}) : super(key: key);
 
   @override
-  State<Screen3> createState() => _Screen3State();
+  State<screen3> createState() => _screen3State();
 }
 
-class _Screen3State extends State<Screen3> {
+class _screen3State extends State<screen3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,7 @@ class _Screen3State extends State<Screen3> {
                 child: Image(
                   height: 400,
                   width: 350,
-                  image: AssetImage("images/Certiifcate.jpg"),
+                  image: AssetImage("images/certificates.jpg"),
                 ),
               ),
             ),
