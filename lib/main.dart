@@ -79,14 +79,19 @@
 //   )),
 // ));
 import 'package:firebase_core/firebase_core.dart';
+import 'package:first_app/Biography.dart';
 import 'package:first_app/BottomNavigationDeemo.dart';
 import 'package:first_app/Boxes.dart';
 import 'package:first_app/ButtonsDemo.dart';
 import 'package:first_app/Calculator.dart';
+import 'package:first_app/ColumnRows.dart';
 import 'package:first_app/CreateAccount.dart';
+import 'package:first_app/EditProfile.dart';
+import 'package:first_app/Facebbok.dart';
 import 'package:first_app/ForgetPassword.dart';
 import 'package:first_app/Instagram.dart';
 import 'package:first_app/MyApp.dart';
+import 'package:first_app/Personal.dart';
 import 'package:first_app/Quiz.dart';
 import 'package:first_app/Screen10.dart';
 import 'package:first_app/Screen8.dart';
@@ -94,6 +99,7 @@ import 'package:first_app/Screen9.dart';
 import 'package:first_app/Screens/Screen1.dart';
 import 'package:first_app/Setting.dart';
 import 'package:first_app/Welcome.dart';
+import 'package:first_app/app.dart';
 import 'package:first_app/flutterCrud.dart';
 import 'package:first_app/menusDemo.dart';
 import 'package:first_app/practice.dart';
@@ -122,11 +128,15 @@ void main() async{
   // runApp(const MaterialApp(home: BottomNavigationDeemo()));
   // runApp(const MaterialApp(home:Screen8()));
   runApp(MaterialApp(
-  theme:ThemeData(scaffoldBackgroundColor: Colors.black),
-  home:Instagram(),));
+  theme:ThemeData(
+    // scaffoldBackgroundColor: Color(0xff1F1F1F),
+    // scaffoldBackgroundColor: Colors.black,
+        primaryColor: Color(0xff145C9E),),
+  home:ColumnRows(),));
   //  runApp(const MaterialApp(home:Calculator()));
   //  runApp(const MaterialApp(home:Boxes()));
   // runApp(const MaterialApp(home:webviewDemo()));
+  
   // runApp(screen0());
   // runApp(const MaterialApp(home:screen1(),));
   // void main() => runApp(MyApp1()); 

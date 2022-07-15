@@ -1,3 +1,4 @@
+import 'package:first_app/EditProfile.dart';
 import 'package:first_app/Screen10.dart';
 import 'package:flutter/material.dart';
 
@@ -47,7 +48,7 @@ class _InstagramState extends State<Instagram> {
               onPressed: () {
                 setState(() {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return const Screen10();
+                    return EditProfile();
                   }));
                 });
               },
